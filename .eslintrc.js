@@ -29,8 +29,8 @@ module.exports = {
           ['@plone/volto-slate', `${coreLocation}/packages/volto-slate/src`],
           ['@plone/registry', `${coreLocation}/packages/registry/src`],
           [
-            '@plone-collective/volto-aemet-weather-block',
-            './packages/volto-aemet-weather-block/src',
+            'volto-aemet',
+            './packages/volto-aemet/src',
           ],
           ...addonAliases,
         ],

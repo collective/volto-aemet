@@ -3,19 +3,24 @@ name = "Volto_Aemet_Weather_Block_Documentation"
 description = "A new add-on for Volto to report the Weather from Aemet."
 keywords = [
     "Volto Aemet Weather Block",
-    "documentation",
+    "Volto",
     "Plone",
     "Diátaxis",
+    "aemet",
+    "weather",
+    "integration",
+    "documentation"
 ]
 version="1.0.0"
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
-license = { file = "LICENSE" }
+license = "CC-BY-4.0"
+license-files = ["LICENSE.md"]
 maintainers = [
-    { name = "Plone Community", email = "leonardocaballero@gmail.com" },
+    { name = "Leonardo J. Caballero G.", email = "leonardocaballero@gmail.com" },
 ]
 authors = [
-    { name = "Plone Community", email = "leonardocaballero@gmail.com" },
+    { name = "Leonardo J. Caballero G.", email = "leonardocaballero@gmail.com" },
 ]
 classifiers = [
     "Development Status :: 1 - Planning",
@@ -53,9 +58,12 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/collective/volto-aemet-weather-block"
+Repository = "https://github.com/macagua/volto-aemet"
 Documentation = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
 
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["styles"]

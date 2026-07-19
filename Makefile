@@ -26,7 +26,7 @@ DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
 API_PATH ?= http://127.0.0.1:55001/plone
 
-ADDON_NAME='@plone-collective/volto-aemet-weather-block'
+ADDON_NAME='volto-aemet'
 
 .PHONY: help
 help: ## Show this help
@@ -85,11 +85,11 @@ lint: ## Lint, or catch and remove problems, in code base
 
 .PHONY: release
 release: ## Release the add-on on npmjs.org
-	pnpm release
+	set -a; [ -f .env ] && source .env; set +a; pnpm release
 
 .PHONY: release-dry-run
 release-dry-run: ## Dry-run the release of the add-on on npmjs.org
-	pnpm release
+	set -a; [ -f .env ] && source .env; set +a; pnpm dry-release
 
 .PHONY: test
 test: ## Run unit tests

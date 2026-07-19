@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-16 1:40-0400\n"
+"PO-Revision-Date: 2026-07-19 14:29-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language: es\n"
+"Language-Team: ES <LL@li.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Preferred-Encodings: utf-8\n"
+"MIME-Version: 1.0\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Domain: volto\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. Default: "AEMET Weather Forecast"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "AEMET Weather Forecast"
+msgstr "AEMET: Pronóstico del tiempo"
+
+#. Default: "Default"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Default"
+msgstr "Predeterminado"
+
+#. Default: "Location ID"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Location ID"
+msgstr "ID de ubicación"
+
+#. Default: "Province"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Province"
+msgstr "Provincia"
+
+#. Default: "The Location ID of the AEMET service, for example '41091' to Sevilla location ID."
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "The Location ID of the AEMET service, for example '41091' to Sevilla location ID."
+msgstr "El ID de ubicación del servicio AEMET, por ejemplo '41091' para la ubicación de Sevilla."
+
+#. Default: "The name of the province of the location (in lowercase) of the AEMET service."
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "The name of the province of the location (in lowercase) of the AEMET service."
+msgstr "El nombre de la provincia en la que se encuentra (en minúsculas) el servicio de la AEMET."
+
+#. Default: "Current day"
+#: components/Aemet/Weather
+msgid "current_day"
+msgstr "Día actual"
+
+#. Default: "Current location"
+#: components/Aemet/Weather
+msgid "current_location"
+msgstr "Ubicación actual"
+
+#. Default: "Current temperature"
+#: components/Aemet/Weather
+msgid "current_temperature"
+msgstr "Temperatura actual"
+
+#. Default: "Current time"
+#: components/Aemet/Weather
+msgid "current_time"
+msgstr "Hora actual"
+
+#. Default: "Loading weather forecast..."
+#: components/Aemet/Weather
+#: components/Aemet/WeatherCurrent
+msgid "loading_weather_forecast"
+msgstr "Cargando la previsión meteorológica..."
+
+#. Default: "Minimum-Maximum"
+#: components/Aemet/Weather
+msgid "minimum_maximum"
+msgstr "Mínimo-Máximo"
+
+#. Default: "Not available"
+#: components/Aemet/Weather
+msgid "not_available"
+msgstr "No disponible"
+
+#. Default: "Weather description"
+#: components/Aemet/Weather
+msgid "weather_description"
+msgstr "Descripción del clima"

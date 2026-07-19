@@ -1,15 +1,51 @@
-# Volto Aemet Weather Block (@plone-collective/volto-aemet-weather-block)
+# Volto AEMET Weather (volto-aemet)
 
-A new add-on for Volto to report the Weather from Aemet.
+[![npm](https://img.shields.io/npm/v/volto-aemet)](https://www.npmjs.com/package/volto-aemet)
+[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/volto-aemet/)
+[![Code analysis checks](https://github.com/macagua/volto-aemet/actions/workflows/code.yml/badge.svg)](https://github.com/macagua/volto-aemet/actions/workflows/code.yml)
+[![Unit tests](https://github.com/macagua/volto-aemet/actions/workflows/unit.yml/badge.svg)](https://github.com/macagua/volto-aemet/actions/workflows/unit.yml)
 
-[![npm](https://img.shields.io/npm/v/@plone-collective/volto-aemet-weather-block)](https://www.npmjs.com/package/@plone-collective/volto-aemet-weather-block)
-[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/volto-aemet-weather-block/)
-[![Code analysis checks](https://github.com/collective/volto-aemet-weather-block/actions/workflows/code.yml/badge.svg)](https://github.com/collective/volto-aemet-weather-block/actions/workflows/code.yml)
-[![Unit tests](https://github.com/collective/volto-aemet-weather-block/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/volto-aemet-weather-block/actions/workflows/unit.yml)
+A volto add-on that integrates AEMET service with Plone to report the weather forecast.
 
 ## Features
 
-<!-- List your awesome features here -->
+- Add a new `AEMET Settings` Volto control panel.
+
+- Add a new react component called `Weather`, that uses data from the AEMET service.
+
+- Add a new `AEMET Weather Current` Volto content block.
+
+- Add a new `AEMET Weather Forecast` Volto content block.
+
+## Screenshot
+
+**Add-on Configuration Access**
+
+<img width="290" alt="Add-on Configuration" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/addon-configuration-aemet-icon.png">
+
+---
+
+**AEMET Settings control panel**
+
+<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/aemet-settings.png">
+
+---
+
+**AEMET Weather Current Volto content block**
+
+<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-current.png">
+
+---
+
+**AEMET Weather Forecast Volto content block**
+
+<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-forecast.png">
+
+---
+
+## Backend integration
+
+To use this product in Plone CMS, you needs to include the following add-on in your project: https://github.com/macagua/collective.volto.aemet
 
 ## Installation
 
@@ -18,45 +54,75 @@ To install your project, you must choose the method appropriate to your version 
 
 ### Volto 18 and later
 
-Add `@plone-collective/volto-aemet-weather-block` to your `package.json`:
+Add `volto-aemet` to your `package.json`:
+
+```json
+"addons": [
+    "volto-aemet": "*"
+]
+```
 
 ```json
 "dependencies": {
-    "@plone-collective/volto-aemet-weather-block": "*"
+    "volto-aemet": "*"
 }
 ```
 
-Add `@plone-collective/volto-aemet-weather-block` to your `volto.config.js`:
+#### Install from Github
 
-```javascript
-const addons = ['@plone-collective/volto-aemet-weather-block'];
+If you trying to install from Github you need edit the `mrs.developer.json` file:
+
+```json
+{
+  "volto-aemet": {
+    "develop": true,
+    "output": "./packages/",
+    "package": "volto-aemet",
+    "url": "git@github.com:macagua/volto-aemet.git",
+    "https": "https://github.com/macagua/volto-aemet.git",
+    "branch": "main"
+  }
+}
 ```
 
-If this package provides a Volto theme, and you want to activate it, then add the following to your `volto.config.js`:
+The `mrs.developer.json` is using by an NodeJS utility called `mrs.developer` that makes
+it easy to work with NPM projects containing lots of packages, of which you only want to
+develop some.
 
-```javascript
-const theme = '@plone-collective/volto-aemet-weather-block';
+Also add `volto-aemet` to your `package.json`:
+
+```json
+"addons": [
+    "volto-aemet": "*"
+]
 ```
 
+```json
+"dependencies": {
+    "volto-aemet": "workspace:*",
+}
+```
+
+---
 ### Volto 17 and earlier
 
 Create a new Volto project (you can skip this step if you already have one):
 
 ```
 npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon @plone-collective/volto-aemet-weather-block
+yo @plone/volto my-volto-project --addon volto-aemet
 cd my-volto-project
 ```
 
-Add `@plone-collective/volto-aemet-weather-block` to your package.json:
+Add `volto-aemet` to your package.json:
 
 ```JSON
 "addons": [
-    "@plone-collective/volto-aemet-weather-block"
+    "volto-aemet"
 ],
 
 "dependencies": {
-    "@plone-collective/volto-aemet-weather-block": "*"
+    "volto-aemet": "*"
 }
 ```
 
@@ -97,8 +163,8 @@ For this reason, it only works with pnpm and Volto 18 (currently in alpha).
 1.  Clone this repository, then change your working directory.
 
     ```shell
-    git clone git@github.com:collective/volto-aemet-weather-block.git
-    cd volto-aemet-weather-block
+    git clone git@github.com:macagua/volto-aemet.git
+    cd volto-aemet
     ```
 
 2.  Install this code base.
@@ -212,10 +278,24 @@ In the third session, start the Cypress interactive test runner.
 make acceptance-test
 ```
 
+## Credits
+
+Developed with the support of:
+
+- [Instituto Municipal de Deportes - IMD, Seville City Council, Spain](https://imd.sevilla.org/).
+
+  <img width="200" alt="IMD Logo" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/imd-ayto-logo.svg">
+
+### Acknowledgements 🙏
+
+Generated using [Cookieplone (0.9.10)](https://github.com/plone/cookieplone) and [cookieplone-templates (eb40854)](https://github.com/plone/cookieplone-templates/commit/eb4085428af6261227bcb086ece110bbe5475d89) on 2025-11-06 19:31:17.502224. A special thanks to all contributors and supporters!
+
+## Authors
+
+This product was developed by [Leonardo J. Caballero G.](https://github.com/macagua).
+
+<img width="100" alt="Leonardo J. Caballero G." src="https://avatars.githubusercontent.com/u/185395?v=4&size=100">
+
 ## License
 
 The project is licensed under the MIT license.
-
-## Credits and acknowledgements 🙏
-
-Generated using [Cookieplone (0.9.7)](https://github.com/plone/cookieplone) and [cookieplone-templates (a929949)](https://github.com/plone/cookieplone-templates/commit/a929949d0fe99f6b34b86a001d6a46e49c8f8c05) on 2025-06-22 16:24:43.667504. A special thanks to all contributors and supporters!

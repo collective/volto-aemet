@@ -1,0 +1,69 @@
+// Weather Current Card Widget (WeatherCurrent.jsx)
+.weather-current-wrapper {
+  display: inline-block;
+}
+
+.weather-current-card {
+  display: flex;
+  width: 160px;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background-color: #e9e9e9;
+  font-family: 'Open Sans', sans-serif;
+  gap: 4px;
+}
+
+.weather-current-time-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.weather-current-time {
+  color: #2e2000;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.weather-current-day {
+  color: #2e2000;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.weather-current-city {
+  color: #2e2000;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.weather-current-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.weather-current-temp {
+  color: #2e2000;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.weather-current-icon {
+  width: 100px;
+  height: 100px;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+  }
+}

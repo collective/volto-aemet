@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. Default: "AEMET Weather Forecast"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "AEMET Weather Forecast"
+msgstr ""
+
+#. Default: "Default"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Default"
+msgstr ""
+
+#. Default: "Location ID"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Location ID"
+msgstr ""
+
+#. Default: "Province"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Province"
+msgstr ""
+
+#. Default: "The Location ID of the AEMET service, for example '41091' to Sevilla location ID."
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "The Location ID of the AEMET service, for example '41091' to Sevilla location ID."
+msgstr ""
+
+#. Default: "The name of the province of the location (in lowercase) of the AEMET service."
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "The name of the province of the location (in lowercase) of the AEMET service."
+msgstr ""
+
+#. Default: "Current day"
+#: components/Aemet/Weather
+msgid "current_day"
+msgstr ""
+
+#. Default: "Current location"
+#: components/Aemet/Weather
+msgid "current_location"
+msgstr ""
+
+#. Default: "Current temperature"
+#: components/Aemet/Weather
+msgid "current_temperature"
+msgstr ""
+
+#. Default: "Current time"
+#: components/Aemet/Weather
+msgid "current_time"
+msgstr ""
+
+#. Default: "Loading weather forecast..."
+#: components/Aemet/Weather
+#: components/Aemet/WeatherCurrent
+msgid "loading_weather_forecast"
+msgstr ""
+
+#. Default: "Minimum-Maximum"
+#: components/Aemet/Weather
+msgid "minimum_maximum"
+msgstr ""
+
+#. Default: "Not available"
+#: components/Aemet/Weather
+msgid "not_available"
+msgstr ""
+
+#. Default: "Weather description"
+#: components/Aemet/Weather
+msgid "weather_description"
+msgstr ""

@@ -1,4 +1,4 @@
-const addons = ['@plone-collective/volto-aemet-weather-block'];
+const addons = ['volto-aemet'];
 const theme = '';
 
 module.exports = {
