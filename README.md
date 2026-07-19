@@ -5,6 +5,10 @@
 [![Code analysis checks](https://github.com/macagua/volto-aemet/actions/workflows/code.yml/badge.svg)](https://github.com/macagua/volto-aemet/actions/workflows/code.yml)
 [![Unit tests](https://github.com/macagua/volto-aemet/actions/workflows/unit.yml/badge.svg)](https://github.com/macagua/volto-aemet/actions/workflows/unit.yml)
 
+<a hrf="https://www.aemet.es/" title="Agencia Estatal de Meteorología - AEMET. Gobierno de España" target="_blank">
+  <img width="400" alt="Agencia Estatal de Meteorología - AEMET. Gobierno de España" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/_static/logo.svg">
+</a>
+
 A volto add-on that integrates AEMET service with Plone to report the weather forecast.
 
 ## Features
@@ -281,6 +285,10 @@ make acceptance-test
 ## Credits
 
 Developed with the support of:
+
+- [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/).
+
+  <img width="200" alt="IMD Logo" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/aemet-logo-blue.svg">
 
 - [Instituto Municipal de Deportes - IMD, Seville City Council, Spain](https://imd.sevilla.org/).
 
