@@ -1,7 +1,7 @@
-# Volto Aemet Weather Block
+# volto-aemet
 
-Documentation for Volto Aemet Weather Block.
-A new add-on for Volto to report the Weather from Aemet.
+Documentation for AEMET integration with Volto.
+A new add-on for Volto to report the Weather from AEMET service.
 
 This project provides a Sphinx-based documentation environment for your Plone project, powered by the [Plone Sphinx Theme](https://github.com/plone/plone-sphinx-theme).
 It's generated using the `documentation_starter` template from [Cookieplone](https://github.com/plone/cookieplone).
@@ -59,7 +59,7 @@ make help
 ```
 
 
-## Customize the Volto Aemet Weather Block documentation
+## Customize the AEMET integration with Volto documentation
 
 This section provides how-to guidance to customize your documentation.
 

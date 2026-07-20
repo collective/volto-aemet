@@ -3,7 +3,7 @@
   "version": "1.0.0-alpha.0",
   "description": "A volto add-on that integrates AEMET service with Plone to report the weather forecast.",
   "author": "Leonardo J. Caballero G.",
-  "homepage": "https://github.com/macagua/volto-aemet#readme",
+  "homepage": "https://github.com/collective/volto-aemet#readme",
   "main": "src/index.ts",
   "license": "MIT",
   "keywords": [
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:macagua/volto-aemet.git"
+    "url": "git@github.com:collective/volto-aemet.git"
   },
   "publishConfig": {
     "access": "public"

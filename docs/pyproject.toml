@@ -1,29 +1,34 @@
 [project]
-name = "Volto_Aemet_Weather_Block_Documentation"
-description = "A new add-on for Volto to report the Weather from Aemet."
-keywords = [
-    "Volto Aemet Weather Block",
-    "Volto",
-    "Plone",
-    "Diátaxis",
-    "aemet",
-    "weather",
-    "integration",
-    "documentation"
-]
-version="1.0.0"
+name = "volto_aemet_documentation"
+description = "An integration for the AEMET service with Volto to report the Weather."
 readme = "README.md"
-requires-python = ">=3.10,<3.14"
 license = "CC-BY-4.0"
 license-files = ["LICENSE.md"]
-maintainers = [
-    { name = "Leonardo J. Caballero G.", email = "leonardocaballero@gmail.com" },
-]
 authors = [
     { name = "Leonardo J. Caballero G.", email = "leonardocaballero@gmail.com" },
 ]
+maintainers = [
+    { name = "Leonardo J. Caballero G.", email = "leonardocaballero@gmail.com" },
+]
+keywords = [
+    "Volto",
+    "Plone",
+    "React",
+    "AEMET",
+    "Weather",
+    "integration",
+    "Block",
+    "documentation"
+]
+version="1.0.0"
+requires-python = ">=3.10,<3.14"
 classifiers = [
     "Development Status :: 1 - Planning",
+    "Environment :: Web Environment",
+    "Framework :: Plone",
+    "Framework :: Plone :: 6.0",
+    "Framework :: Plone :: 6.1",
+    "Framework :: Plone :: Addon",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -31,6 +36,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
 ]
 
 [dependency-groups]
@@ -58,8 +64,11 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/macagua/volto-aemet"
-Documentation = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
+Repository = "https://github.com/collective/volto-aemet"
+Source = "https://github.com/collective/volto-aemet"
+Tracker = "https://github.com/collective/volto-aemet/issues"
+Documentation = "https://volto-aemet.readthedocs.io/"
+Changelog = "https://github.com/collective/volto-aemet/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["setuptools"]

@@ -1,22 +1,43 @@
 ---
 myst:
   html_meta:
-    "description": "A new add-on for Volto to report the Weather from Aemet."
-    "property=og:description": "A new add-on for Volto to report the Weather from Aemet."
-    "property=og:title": "Volto Aemet Weather Block"
-    "keywords": "Volto Aemet Weather Block, documentation, A new add-on for Volto to report the Weather from Aemet."
+    "description": "An integration for the AEMET service with Volto"
+    "property=og:description": "An integration for the AEMET service with Volto"
+    "property=og:title": "AEMET integration with Volto"
+    "keywords": "AEMET integration with Volto, documentation, An integration for the AEMET service with Volto"
 ---
 
-# Volto Aemet Weather Block
+# AEMET integration with Volto
 
-Welcome to the documentation for Volto Aemet Weather Block!
-A new add-on for Volto to report the Weather from Aemet.
+Welcome to the documentation for `AEMET` integration with Volto!
 
-This scaffold provides a ready-to-use environment for creating comprehensive documentation for {term}`Plone` projects, based on {term}`Plone Sphinx Theme`.
+<img width="400" alt="image" src="./_static/logo.svg" alt="AEMET Logo">
 
-Built with Markedly Structured Text ({term}`MyST`), this environment supports rich formatting, directives, and extensions tailored for technical documentation.
+An integration for the `AEMET` service with Volto integration.
 
-It's structured following the [Diátaxis](https://diataxis.fr/) documentation framework.
+---
+
+# Credits
+
+Developed with the support of:
+
+- [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/).
+
+  <img width="500" alt="AEMET Logo" src="./images/aemet-logo-blue.svg">
+
+- [Instituto Municipal de Deportes - IMD, Seville City Council, Spain](https://imd.sevilla.org/).
+
+  <img width="200" alt="IMD Logo" src="./images/imd-ayto-logo.svg">
+
+# Authors
+
+This product was developed by [Leonardo J. Caballero G.](https://github.com/macagua).
+
+<img width="70" alt="Leonardo J. Caballero G." src="https://avatars.githubusercontent.com/u/185395?v=4&size=100">
+
+# License
+
+The project is licensed under the MIT license.
 
 ```{toctree}
 :caption: How to guides
@@ -24,14 +45,15 @@ It's structured following the [Diátaxis](https://diataxis.fr/) documentation fr
 :hidden: true
 
 how-to-guides/index
+how-to-guides/security
 ```
 
 ```{toctree}
-:caption: Reference
+:caption: Concepts
 :maxdepth: 2
 :hidden: true
 
-reference/index
+concepts/index
 ```
 
 ```{toctree}
@@ -43,11 +65,12 @@ tutorials/index
 ```
 
 ```{toctree}
-:caption: Concepts
+:caption: Reference
 :maxdepth: 2
 :hidden: true
 
-concepts/index
+reference/index
+reference/development
 ```
 
 ```{toctree}

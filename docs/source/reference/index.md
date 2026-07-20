@@ -1,23 +1,20 @@
 ---
 myst:
   html_meta:
-    "description": "Volto Aemet Weather Block Reference"
-    "property=og:description": "Volto Aemet Weather Block Reference"
-    "property=og:title": "Volto Aemet Weather Block Reference"
-    "keywords": "Plone, _Volto Aemet Weather Block,_ reference"
+    "description": "AEMET Volto Reference"
+    "property=og:description": "AEMET integration with Volto Reference"
+    "property=og:title": "AEMET integration with Volto Reference"
+    "keywords": "Volto, _AEMET integration with Volto,_ reference"
 ---
 
-# Reference
+# General resources
 
 This part of the documentation contains reference material, including APIs, configuration values, and environment variables.
 
-> Reference guides are technical descriptions of the machinery and how to operate it.
-> Reference material is information-oriented.
+## AEMET
 
-```{seealso}
-https://diataxis.fr/reference/
-```
+-   [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/).
 
-## Configuration
+-   [Datos abiertos de AEMET. Catálogo. Plan RISP.](https://www.aemet.es/es/datos_abiertos/catalogo).
 
--   {doc}`plone:contributing/documentation/themes-and-extensions`
+-   [AEMET OpenData](https://www.aemet.es/es/datos_abiertos/AEMET_OpenData).

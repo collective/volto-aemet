@@ -2,54 +2,50 @@
 
 [![npm](https://img.shields.io/npm/v/volto-aemet)](https://www.npmjs.com/package/volto-aemet)
 [![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/volto-aemet/)
-[![Code analysis checks](https://github.com/macagua/volto-aemet/actions/workflows/code.yml/badge.svg)](https://github.com/macagua/volto-aemet/actions/workflows/code.yml)
-[![Unit tests](https://github.com/macagua/volto-aemet/actions/workflows/unit.yml/badge.svg)](https://github.com/macagua/volto-aemet/actions/workflows/unit.yml)
+[![Code analysis checks](https://github.com/collective/volto-aemet/actions/workflows/code.yml/badge.svg)](https://github.com/collective/volto-aemet/actions/workflows/code.yml)
+[![Unit tests](https://github.com/collective/volto-aemet/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/volto-aemet/actions/workflows/unit.yml)
 
-<a hrf="https://www.aemet.es/" title="Agencia Estatal de Meteorología - AEMET. Gobierno de España" target="_blank">
-  <img width="400" alt="Agencia Estatal de Meteorología - AEMET. Gobierno de España" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/_static/logo.svg">
+<a href="https://www.aemet.es/" title="Agencia Estatal de Meteorología - AEMET. Gobierno de España" target="_blank">
+  <img width="400" alt="Agencia Estatal de Meteorología - AEMET. Gobierno de España" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/_static/logo.svg">
 </a>
 
 A volto add-on that integrates AEMET service with Plone to report the weather forecast.
 
 ## Features
 
-- Add a new `AEMET Settings` Volto control panel.
-
-- Add a new react component called `Weather`, that uses data from the AEMET service.
-
 - Add a new `AEMET Weather Current` Volto content block.
 
 - Add a new `AEMET Weather Forecast` Volto content block.
 
-## Screenshot
+- Add a new `AEMET Settings` Volto control panel.
 
-**Add-on Configuration Access**
+- Add a new react component called `Weather`, that uses data from the AEMET service.
 
-<img width="290" alt="Add-on Configuration" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/addon-configuration-aemet-icon.png">
-
----
-
-**AEMET Settings control panel**
-
-<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/aemet-settings.png">
-
----
+## Screenshots
 
 **AEMET Weather Current Volto content block**
 
-<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-current.png">
+<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-current.png">
 
 ---
 
 **AEMET Weather Forecast Volto content block**
 
-<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-forecast.png">
+<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-forecast.png">
 
 ---
 
 ## Backend integration
 
-To use this product in Plone CMS, you needs to include the following add-on in your project: https://github.com/macagua/collective.volto.aemet
+To use this product in Plone CMS, you needs to include the following add-on in your project: https://github.com/collective/collective.volto.aemet
+
+## Translations
+
+This product has been translated into
+
+- English
+
+- Spanish
 
 ## Installation
 
@@ -82,8 +78,8 @@ If you trying to install from Github you need edit the `mrs.developer.json` file
     "develop": true,
     "output": "./packages/",
     "package": "volto-aemet",
-    "url": "git@github.com:macagua/volto-aemet.git",
-    "https": "https://github.com/macagua/volto-aemet.git",
+    "url": "git@github.com:collective/volto-aemet.git",
+    "https": "https://github.com/collective/volto-aemet.git",
     "branch": "main"
   }
 }
@@ -146,6 +142,24 @@ yarn start
 
 Visit http://localhost:3000/ in a browser, login, and check the awesome new features.
 
+## Use it
+
+To use this add-on, go to the `Site setup`, next to the ``Add-on Configuration`` icon, as shown below:
+
+<img width="290" alt="Add-on Configuration" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/addon-configuration-aemet-icon.png">
+
+---
+
+This `AEMET Settings`, you can access the control panel, as shown below:
+
+<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/aemet-settings.png">
+
+In this control panel, you can configure the following fields:
+
+- ``Location ID``, The Location ID of the AEMET service, for example '41091' to Sevilla location ID.
+
+---
+
 
 ## Development
 
@@ -167,7 +181,7 @@ For this reason, it only works with pnpm and Volto 18 (currently in alpha).
 1.  Clone this repository, then change your working directory.
 
     ```shell
-    git clone git@github.com:macagua/volto-aemet.git
+    git clone git@github.com:collective/volto-aemet.git
     cd volto-aemet
     ```
 
@@ -288,11 +302,11 @@ Developed with the support of:
 
 - [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/).
 
-  <img width="200" alt="IMD Logo" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/aemet-logo-blue.svg">
+  <img width="200" alt="IMD Logo" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/aemet-logo-blue.svg">
 
 - [Instituto Municipal de Deportes - IMD, Seville City Council, Spain](https://imd.sevilla.org/).
 
-  <img width="200" alt="IMD Logo" src="https://raw.githubusercontent.com/macagua/volto-aemet/refs/heads/main/docs/source/images/imd-ayto-logo.svg">
+  <img width="200" alt="IMD Logo" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/imd-ayto-logo.svg">
 
 ### Acknowledgements 🙏
 
