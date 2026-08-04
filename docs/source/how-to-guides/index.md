@@ -45,6 +45,8 @@ This product support the following languages:
 
 - Basque
 
+- Catalan
+
 - English
 
 - Spanish
