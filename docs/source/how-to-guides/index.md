@@ -49,6 +49,8 @@ This product support the following languages:
 
 - English
 
+- Galician
+
 - Spanish
 
 ## Install it
