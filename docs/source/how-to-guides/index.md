@@ -41,7 +41,9 @@ To use this product in Plone CMS, you needs to include the following add-on in y
 
 ## Translations
 
-This product has been translated into
+This product support the following languages:
+
+- Basque
 
 - English
 

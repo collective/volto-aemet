@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.volto.acumbamail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-04 18:18+0000\n"
+"PO-Revision-Date: 2026-08-05 00:48+0200\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: Basque <https://hosted.weblate.org/projects/plone/plone/eu/>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: eu\n"
+"Language-Name: Basque\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: collective.volto.acumbamail\n"
+"X-Generator: Poedit 3.9\n"
+"X-Is-Fallback-For: eu-es\n"
+
+#. Default: "AEMET Weather Forecast"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "AEMET Weather Forecast"
+msgstr "AEMET Eguraldiaren Iragarpena"
+
+#. Default: "Default"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Default"
+msgstr "Lehenetsia"
+
+#. Default: "Location ID"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Location ID"
+msgstr "Kokapenaren ID-a"
+
+#. Default: "Province"
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "Province"
+msgstr "Probintzia"
+
+#. Default: "The Location ID of the AEMET service, for example '41091' to Sevilla location ID."
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "The Location ID of the AEMET service, for example '41091' to Sevilla location ID."
+msgstr "AEMET zerbitzuaren kokapen ID-a, adibidez Sevillako kokapen ID-a den '41091'."
+
+#. Default: "The name of the province of the location (in lowercase) of the AEMET service."
+#: components/Blocks/AemetWeatherForecast/messages
+msgid "The name of the province of the location (in lowercase) of the AEMET service."
+msgstr "AEMET zerbitzuaren kokapenaren probintziaren izena (minuskulatan)."
+
+#. Default: "Current day"
+#: components/Aemet/Weather
+msgid "current_day"
+msgstr "Gaur egungo eguna"
+
+#. Default: "Current location"
+#: components/Aemet/Weather
+msgid "current_location"
+msgstr "Uneko kokapena"
+
+#. Default: "Current temperature"
+#: components/Aemet/Weather
+msgid "current_temperature"
+msgstr "Uneko tenperatura"
+
+#. Default: "Current time"
+#: components/Aemet/Weather
+msgid "current_time"
+msgstr "Uneko ordua"
+
+#. Default: "Loading weather forecast..."
+#: components/Aemet/Weather components/Aemet/WeatherCurrent
+msgid "loading_weather_forecast"
+msgstr "Eguraldi-iragarpena kargatzen..."
+
+#. Default: "Minimum-Maximum"
+#: components/Aemet/Weather
+msgid "minimum_maximum"
+msgstr "Gutxieneko-maximoa"
+
+#. Default: "Not available"
+#: components/Aemet/Weather
+msgid "not_available"
+msgstr "Ez dago eskuragarri"
+
+#. Default: "Weather description"
+#: components/Aemet/Weather
+msgid "weather_description"
+msgstr "Eguraldiaren deskribapena"
