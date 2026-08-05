@@ -5,5 +5,4 @@
 
 import WeatherCurrent from './WeatherCurrent.jsx';
 
-export { getWeatherIcon, useWeatherData, weatherMessages } from './Weather.js';
 export default WeatherCurrent;

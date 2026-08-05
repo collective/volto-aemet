@@ -5,12 +5,12 @@ msgstr ""
 "POT-Creation-Date: 2026-08-04 18:18+0000\n"
 "PO-Revision-Date: 2026-08-05 00:48+0200\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
-"Language-Team: Basque <https://hosted.weblate.org/projects/plone/plone/eu/>\n"
 "Language: eu\n"
-"MIME-Version: 1.0\n"
+"Language-Team: Basque <https://hosted.weblate.org/projects/plone/plone/eu/>\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
 "Language-Code: eu\n"
 "Language-Name: Basque\n"
 "Preferred-Encodings: latin1 utf-8\n"
@@ -49,41 +49,42 @@ msgid "The name of the province of the location (in lowercase) of the AEMET serv
 msgstr "AEMET zerbitzuaren kokapenaren probintziaren izena (minuskulatan)."
 
 #. Default: "Current day"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_day"
 msgstr "Gaur egungo eguna"
 
 #. Default: "Current location"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_location"
 msgstr "Uneko kokapena"
 
 #. Default: "Current temperature"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_temperature"
 msgstr "Uneko tenperatura"
 
 #. Default: "Current time"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_time"
 msgstr "Uneko ordua"
 
 #. Default: "Loading weather forecast..."
-#: components/Aemet/Weather components/Aemet/WeatherCurrent
+#: components/Aemet/WeatherCurrent
+#: hooks/useWeatherData
 msgid "loading_weather_forecast"
 msgstr "Eguraldi-iragarpena kargatzen..."
 
 #. Default: "Minimum-Maximum"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "minimum_maximum"
 msgstr "Gutxieneko-maximoa"
 
 #. Default: "Not available"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "not_available"
 msgstr "Ez dago eskuragarri"
 
 #. Default: "Weather description"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "weather_description"
 msgstr "Eguraldiaren deskribapena"

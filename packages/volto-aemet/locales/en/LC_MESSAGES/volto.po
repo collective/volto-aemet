@@ -42,42 +42,42 @@ msgid "The name of the province of the location (in lowercase) of the AEMET serv
 msgstr ""
 
 #. Default: "Current day"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_day"
 msgstr ""
 
 #. Default: "Current location"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_location"
 msgstr ""
 
 #. Default: "Current temperature"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_temperature"
 msgstr ""
 
 #. Default: "Current time"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_time"
 msgstr ""
 
 #. Default: "Loading weather forecast..."
-#: components/Aemet/Weather
 #: components/Aemet/WeatherCurrent
+#: hooks/useWeatherData
 msgid "loading_weather_forecast"
 msgstr ""
 
 #. Default: "Minimum-Maximum"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "minimum_maximum"
 msgstr ""
 
 #. Default: "Not available"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "not_available"
 msgstr ""
 
 #. Default: "Weather description"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "weather_description"
 msgstr ""

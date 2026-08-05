@@ -7,7 +7,11 @@ import React, { useState, useEffect } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import moment from 'moment';
 import Image from '@plone/volto/components/theme/Image/Image';
-import { weatherMessages, getWeatherIcon, useWeatherData } from './Weather.js'; // explicit .js — shared logic, not the view
+import {
+  weatherMessages,
+  getWeatherIcon,
+  useWeatherData,
+} from 'volto-aemet/hooks'; // explicit .js — shared logic, not the view
 
 const WeatherCurrent = (props) => {
   const { forecast, isLoading } = useWeatherData();

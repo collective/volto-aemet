@@ -6,14 +6,14 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { IntlProvider } from 'react-intl';
-import { useWeatherData, getWeatherIcon } from './Weather.js';
+import { useWeatherData, getWeatherIcon } from 'volto-aemet/hooks';
 import WeatherCurrent from './WeatherCurrent.jsx';
 
 // ---------------------------------------------------------------------------
 // Mocks (hoisted by babel-jest before imports)
 // ---------------------------------------------------------------------------
 
-jest.mock('./Weather.js', () => ({
+jest.mock('volto-aemet/hooks/useWeatherData.js', () => ({
   weatherMessages: {
     minimumMaximum: {
       id: 'minimum_maximum',

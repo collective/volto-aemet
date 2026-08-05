@@ -1,6 +1,6 @@
 /**
- * Unit tests for Weather.js shared logic.
- * @module components/Aemet/WeatherShared.test
+ * Unit tests for useWeatherData.js shared logic.
+ * @module hooks/useWeatherData.test
  */
 
 import React from 'react';
@@ -8,7 +8,11 @@ import { renderHook, waitFor } from '@testing-library/react';
 import { IntlProvider } from 'react-intl';
 import moment from 'moment';
 
-import { getWeatherIcon, weatherMessages, useWeatherData } from './Weather';
+import {
+  getWeatherIcon,
+  weatherMessages,
+  useWeatherData,
+} from './useWeatherData';
 
 // ---------------------------------------------------------------------------
 // Helpers

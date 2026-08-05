@@ -5,12 +5,12 @@ msgstr ""
 "POT-Creation-Date: 2026-08-04 18:18+0000\n"
 "PO-Revision-Date: 2026-08-05 01:03+0200\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
-"Language-Team: Català <https://hosted.weblate.org/projects/plone/plone/ca/>\n"
 "Language: ca\n"
-"MIME-Version: 1.0\n"
+"Language-Team: Català <https://hosted.weblate.org/projects/plone/plone/ca/>\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
 "Language-Code: ca\n"
 "Language-Name: Catalan\n"
 "Preferred-Encodings: utf-8\n"
@@ -49,41 +49,42 @@ msgid "The name of the province of the location (in lowercase) of the AEMET serv
 msgstr "El nom de la província de la ubicació (en minúscules) del servei de l'AEMET."
 
 #. Default: "Current day"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_day"
 msgstr "Dia actual"
 
 #. Default: "Current location"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_location"
 msgstr "Ubicació actual"
 
 #. Default: "Current temperature"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_temperature"
 msgstr "Temperatura actual"
 
 #. Default: "Current time"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "current_time"
 msgstr "Hora actual"
 
 #. Default: "Loading weather forecast..."
-#: components/Aemet/Weather components/Aemet/WeatherCurrent
+#: components/Aemet/WeatherCurrent
+#: hooks/useWeatherData
 msgid "loading_weather_forecast"
 msgstr "Carregant la previsió del temps..."
 
 #. Default: "Minimum-Maximum"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "minimum_maximum"
 msgstr "Mínim-Màxim"
 
 #. Default: "Not available"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "not_available"
 msgstr "No disponible"
 
 #. Default: "Weather description"
-#: components/Aemet/Weather
+#: hooks/useWeatherData
 msgid "weather_description"
 msgstr "Descripció del temps"
