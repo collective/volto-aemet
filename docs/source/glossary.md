@@ -75,12 +75,12 @@ AEMET Settings
 
 plone.registry
     A {term}`Plone` component that stores configuration values as named records.
-    {term}`collective.volto.aemet` uses it to persist the {term}`IAEMETSettings` interface field ({term}`location_id`).
+    {term}`collective.volto.aemet` uses it to persist the {term}`IAemetSettings` interface field ({term}`location_id`).
 
 Registry
     The {term}`Plone` Registry is a key-value store for site configuration, managed by the {term}`plone.registry` package.
     Settings are declared through Zope schema interfaces and stored as typed records.
-    In this add-on the records are declared in {term}`IAemetSettings` and stored under the ``aemet`` prefix (e.g. ``aemet.location_id``).
+    In this {term}`add-on` the records are declared in {term}`IAemetSettings` and stored under the ``aemet`` prefix (e.g. ``aemet.location_id``).
     They can be read using ``plone.api.portal.get_registry_record("aemet.location_id")``.
 
 GenericSetup
@@ -89,7 +89,8 @@ GenericSetup
 
 collective.volto.aemet
     `collective.volto.aemet` is the {term}`Plone` {term}`add-on` that integrates {term}`AEMET` sevice weather data into a {term}`Plone` site.
-    It provides a {term}`Control panel` to configure the target municipality, a REST API endpoint to expose weather forecast data, and a browser layer to scope its components.
+    It provides a {term}`Control panel` to configure the target municipality, a REST API endpoint to expose weather forecast data, and a
+    browser layer ({term}`IAemetLayer`) to scope its components.
     It is designed to work together with the {term}`volto-aemet` {term}`Volto` {term}`add-on`.
 
     ```{tip}
@@ -97,12 +98,17 @@ collective.volto.aemet
     ```
 
 volto-aemet
-    `volto-aemet` is the {term}`Volto` {term}`add-on` that integrates {term}`AEMET` sevice weather data into a {term}`Plone` site via the {term}`collective.volto.aemet` {term}`add-on`.
+    `volto-aemet` is the {term}`Volto` {term}`add-on` that integrates {term}`AEMET` sevice weather data into a {term}`Plone` site via
+    the {term}`collective.volto.aemet` {term}`add-on`.
     It provides a {term}`Control panel` to configure the target municipality, Two Volto content blocks.
 
     ```{tip}
     More infomation checkout the official [documentation](https://volto-aemet.readthedocs.io/en/latest/).
     ```
+
+IAemetLayer
+    ``IAemetLayer`` is a browser layer marker interface provided by this {term}`add-on`.
+    It is applied to the request when the {term}`add-on` is installed, scoping all views, services, and adapters to sites where the {term}`add-on` is active.
 
 IAemetSettings
     ``IAemetSettings`` is the Zope schema interface that declares the configuration fields for the {term}`AEMET` {term}`add-on`.

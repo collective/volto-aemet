@@ -67,7 +67,7 @@ dev = [
 Repository = "https://github.com/collective/volto-aemet"
 Source = "https://github.com/collective/volto-aemet"
 Tracker = "https://github.com/collective/volto-aemet/issues"
-Documentation = "https://volto-aemet.readthedocs.io/"
+Documentation = "https://volto-aemet.readthedocs.io/en/latest/"
 Changelog = "https://github.com/collective/volto-aemet/blob/main/CHANGELOG.md"
 
 [build-system]

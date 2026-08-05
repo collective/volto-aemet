@@ -20,7 +20,7 @@ for the front end.
 
 Anonymous users can't access registry resources by default with {term}`plone.restapi` (there is a special permission).
 
-To avoid enabling registry access to everyone, this package exposes a dedicated RestApi route with
+To avoid enabling registry access to everyone, this package exposes a dedicated RestApi `route` with
 {term}`AEMET Settings` (`@aemet-settings`):
 
 Get the information from the {term}`AEMET Settings` via `curl` command:
@@ -31,7 +31,7 @@ curl -X GET http://localhost:8080/Plone/@controlpanels/aemet-settings \
   --user admin:admin
 ```
 
-This route returns a JSON object containing the {term}`AEMET Settings` and data via `curl` command:
+This `route` returns a `JSON` object containing the {term}`AEMET Settings` and weather forecast data via `curl` command:
 
 ```json
 {
@@ -68,7 +68,7 @@ This route returns a JSON object containing the {term}`AEMET Settings` and data 
 }
 ```
 
-Below is a `PATCH` operation to set up the {term}`location_id` field values of the
+Below is a `PATCH` operation to set up the {term}`location_id` field value of the
 {term}`AEMET Settings`:
 
 ```shell
@@ -79,7 +79,7 @@ curl -i -X PATCH http://localhost:8080/Plone/@controlpanels/aemet-settings \
   --user admin:admin
 ```
 
-This route returns a HTTP response:
+This `route` returns a HTTP response:
 
 ```shell
 HTTP/1.1 204 No Content
@@ -90,10 +90,10 @@ Via: waitress
 X-Powered-By: Zope (www.zope.dev), Python (www.python.org)
 ```
 
-That means you updated the values in the {term}`AEMET Settings` control panel field correctly.
+That means you updates the value in the {term}`AEMET Settings` control panel field correctly.
 
 ```{note}
-You can validate the update operation, going to ``Site setup > Add-on Settings > Acumbamail Settings``.
+You can validate the update operation, going to ``Site setup > Add-on Settings > AEMET Settings``.
 ```
 
 ---
@@ -101,13 +101,13 @@ You can validate the update operation, going to ``Site setup > Add-on Settings >
 (aemet-weather-forecast-route)=
 ## AEMET weather forecast route
 
-This `route` is implements to fetch the current weather forecast for location defined on the {term}`AEMET Settings` **control panel**:
+This `route` is implements to fetch the current weather forecast for location defined on the {term}`AEMET Settings` {term}`Control panel`:
 
 ```shell
 curl -X GET http://localhost:8080/Plone/++api++/@aemet-weather-forecast
 ```
 
-This `route` returns a `JSON`  object containing the {term}`AEMET` weather forecast data:
+This `route` returns a `JSON` object containing the {term}`AEMET` weather forecast data:
 
 ```json
 {
@@ -127,4 +127,4 @@ This `route` returns a `JSON`  object containing the {term}`AEMET` weather forec
 }
 ```
 
-This `route` can be implements in {term}`Volto` _integration_, for example, the `WeatherForecast` component available into the {term}`volto-aemet` {term}`add-on`.
+This `route` can be implements in a {term}`Volto` _integration_, for example, the `WeatherForecast` component available into the {term}`volto-aemet` {term}`add-on`.
