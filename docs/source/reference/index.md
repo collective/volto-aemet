@@ -4,7 +4,7 @@ myst:
     "description": "AEMET Volto Reference"
     "property=og:description": "AEMET integration with Volto Reference"
     "property=og:title": "AEMET integration with Volto Reference"
-    "keywords": "Volto, _AEMET integration with Volto,_ reference"
+    "keywords": "AEMET, service, Volto, integration, documentation, reference"
 ---
 
 # General resources
@@ -13,8 +13,22 @@ This part of the documentation contains reference material, including APIs, conf
 
 ## AEMET
 
--   [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/).
+-   Agencia Estatal de Meteorología - {term}`AEMET` - Gobierno de España.
 
 -   [Datos abiertos de AEMET. Catálogo. Plan RISP.](https://www.aemet.es/es/datos_abiertos/catalogo).
 
 -   [AEMET OpenData](https://www.aemet.es/es/datos_abiertos/AEMET_OpenData).
+
+## Volto
+
+-   {term}`volto-aemet` {term}`add-on`.
+
+-   [Volto Developer Documentation](https://6.docs.plone.org/volto/development/index.html).
+
+## Plone CMS
+
+-   {term}`collective.volto.aemet` {term}`add-on`.
+
+-   [Plone REST API Documentation](https://6.docs.plone.org/plone.restapi/docs/source/index.html).
+
+-   [Plone Backend Developer Documentation](https://6.docs.plone.org/backend/index.html).

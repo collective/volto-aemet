@@ -4,20 +4,21 @@ myst:
     "description": "AEMET integration with Volto development guides"
     "property=og:description": "AEMET Volto development guides"
     "property=og:title": "AEMET integration with Volto development guides"
-    "keywords": "Volto, AEMET integration with Volto, development, guides"
+    "keywords": "AEMET, service, Volto, integration, documentation, development, guides"
 ---
 
 # Development
 
-The development of this add-on is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other Volto core improvements.
-For this reason, it only works with pnpm and Volto 18 (currently in alpha).
+The development of this {term}`add-on` is making in isolation using a new approach using `pnpm` workspaces
+and latest `mrs-developer` and other {term}`Volto` core improvements.
 
+For this reason, it only works with `pnpm` and {term}`Volto` 18 (currently in alpha).
 
 ## Prerequisites ✅
 
 -   An [operating system](https://6.docs.plone.org/install/create-project-cookieplone.html#prerequisites-for-installation) that runs all the requirements mentioned.
 -   [nvm](https://6.docs.plone.org/install/create-project-cookieplone.html#nvm)
--   [Node.js and pnpm](https://6.docs.plone.org/install/create-project.html#node-js) 22
+-   [Node.js and pnpm](https://6.docs.plone.org/install/create-project-cookieplone.html#node-js) 22
 -   [Make](https://6.docs.plone.org/install/create-project-cookieplone.html#make)
 -   [Git](https://6.docs.plone.org/install/create-project-cookieplone.html#git)
 -   [Docker](https://docs.docker.com/get-started/get-docker/) (optional)
@@ -79,7 +80,7 @@ make install
 Start the backend.
 
 ```shell
-make backend-docker-start
+make sync
 ```
 
 In a separate terminal session, start the frontend.
@@ -88,25 +89,25 @@ In a separate terminal session, start the frontend.
 make start
 ```
 
-## Lint code
+## Lint Code
 
-Run ESlint, Prettier, and Stylelint in analyze mode.
+Run `ESlint`, `Prettier`, and `Stylelint` in analyze mode.
 
 ```shell
 make lint
 ```
 
-## Format code
+## Format Code
 
-Run ESlint, Prettier, and Stylelint in fix mode.
+Run `ESlint`, `Prettier`, and `Stylelint` in fix mode.
 
 ```shell
 make format
 ```
 
-## i18n
+## Internationalization - i18n
 
-Extract the i18n messages to locales.
+Synchronise the `i18n` messages to `locales` directory.
 
 ```shell
 make i18n

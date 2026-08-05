@@ -5,4 +5,4 @@ Disallow: /.doctrees/
 Disallow: /*.txt$
 Disallow: /.buildinfo$
 Disallow: /objects.inv$
-Sitemap: https://volto-aemet.readthedocs.io/sitemap-custom.xml
+Sitemap: https://volto-aemet.readthedocs.io/en/latest/sitemap-custom.xml

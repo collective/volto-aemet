@@ -4,16 +4,16 @@ myst:
     "description": "An integration for the AEMET service with Volto"
     "property=og:description": "An integration for the AEMET service with Volto"
     "property=og:title": "AEMET integration with Volto"
-    "keywords": "AEMET integration with Volto, documentation, An integration for the AEMET service with Volto"
+    "keywords": "AEMET, service, Volto, integration, documentation"
 ---
 
 # AEMET integration with Volto
 
-Welcome to the documentation for `AEMET` integration with Volto!
+Welcome to the documentation for {term}`AEMET` integration with {term}`Volto`!
 
-<img width="400" alt="image" src="./_static/logo.svg" alt="AEMET Logo">
+<img width="400" alt="AEMET Logo" src="./_static/logo.svg">
 
-An integration for the `AEMET` service with Volto integration.
+An integration for the {term}`AEMET` service with Volto integration.
 
 ---
 
@@ -21,7 +21,7 @@ An integration for the `AEMET` service with Volto integration.
 
 Developed with the support of:
 
-- [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/).
+- [Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/es/portada).
 
   <img width="500" alt="AEMET Logo" src="./images/aemet-logo-blue.svg">
 
@@ -31,13 +31,13 @@ Developed with the support of:
 
 # Authors
 
-This product was developed by [Leonardo J. Caballero G.](https://github.com/macagua).
+The original creator of this {term}`add-on` was [Leonardo J. Caballero G.](https://github.com/macagua).
 
 <img width="70" alt="Leonardo J. Caballero G." src="https://avatars.githubusercontent.com/u/185395?v=4&size=100">
 
 # License
 
-The project is licensed under the MIT license.
+The license for this {term}`add-on` is [MIT](https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/LICENSE).
 
 ```{toctree}
 :caption: How to guides

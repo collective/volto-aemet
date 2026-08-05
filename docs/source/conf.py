@@ -24,7 +24,7 @@ author = "Leonardo J. Caballero G."
 trademark_name = "collective"
 now = datetime.now()
 year = str(now.year)
-copyright = f"2025 - {year}"
+copyright = f"2025 - {year}"  # noqa: A001
 
 
 # The version info for the project you're documenting, acts as replacement for
@@ -325,7 +325,7 @@ tippy_props = {
 # -- Options for HTML help output -------------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "AEMET integration with VoltoDocumentation"
+htmlhelp_basename = "AEMET_integration_with_Volto_Documentation"
 
 
 # -- Options for LaTeX output -------------------------------------------------
@@ -335,9 +335,9 @@ htmlhelp_basename = "AEMET integration with VoltoDocumentation"
 latex_documents = [
     (
         "index",
-        "AEMET integration with VoltoDocumentation.tex",
+        "AEMET_integration_with_Volto_Documentation.tex",
         "AEMET integration with Volto Documentation",
-        "collective community",
+        author,
         "manual",
     ),
 ]
