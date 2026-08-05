@@ -7,7 +7,6 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-    "verbatimModuleSyntax": true,
     "module": "preserve",
     "noEmit": true,
     "lib": ["es2022", "dom", "dom.iterable"],
@@ -17,7 +16,15 @@
       "volto-aemet/*": ["./src/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "src/components/Aemet/WeatherShared.test.js",
+    "src/components/Aemet/WeatherCurrent.test.js",
+    "src/config/settings.test.js",
+    "src/config/blocks.test.js"
+  ],
   "exclude": [
     "node_modules",
     "build",

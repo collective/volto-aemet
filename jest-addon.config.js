@@ -5,7 +5,7 @@ const voltoJestMapper = require('./core/packages/volto/package.json').jest
 
 module.exports = {
   roots: ['../../../packages'],
-  testMatch: ['<rootDir>/../../../../**/?(*.)+(spec|test).[jt]s?(x)'],
+  testMatch: ['<rootDir>/../../../**/?(*.)+(spec|test).[jt]s?(x)'],
   collectCoverageFrom: [
     'src/addons/**/src/**/*.{js,jsx,ts,tsx}',
     '!src/**/*.d.ts',
@@ -27,5 +27,13 @@ module.exports = {
     // The ^ anchor is critical: without it the regex also matches absolute
     // pnpm store paths that contain "volto-aemet/" as a directory fragment.
     '^volto-aemet/(.*)$': '<rootDir>/../../../packages/volto-aemet/src/$1',
+  },
+  globals: {
+    'ts-jest': {
+      isolatedModules: true,
+      diagnostics: {
+        ignoreCodes: [2307], // Ignore "Cannot find module" errors
+      },
+    },
   },
 };

@@ -1,6 +1,6 @@
 /**
  * Unit tests for Weather.js shared logic.
- * @module components/Aemet/Weather.test
+ * @module components/Aemet/WeatherShared.test
  */
 
 import React from 'react';
