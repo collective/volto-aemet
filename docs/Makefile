@@ -39,7 +39,7 @@ init: clean clean-python .venv/bin/python  ## Clean docs build directory and Pyt
 
 .PHONY: clean
 clean:  ## Clean docs build directory
-	cd $(DOCS_DIR) && rm -rf $(BUILDDIR)/
+	rm -rf $(BUILDDIR)/
 
 .PHONY: clean-python
 clean-python: clean
