@@ -31,7 +31,7 @@ The integration aims to achieve the following objectives:
 * Centralise access to {term}`AEMET` services via the {term}`Plone` backend.
 * Reduce direct calls from the browser to external services.
 * Facilitate the reuse of weather data across different {term}`Volto` blocks and components.
-* Enable configuration of the service via the {term}`Plone` Control Panel.
+* Enable configuration of the service via the {term}`Plone` {term}`Control panel`.
 
 ---
 

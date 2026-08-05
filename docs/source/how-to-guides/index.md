@@ -13,15 +13,19 @@ This part of the documentation contains how-to guides, and including installatio
 
 ## Features
 
-- Control panel in {term}`Plone` registry to manage {term}`AEMET Settings`.
+- {term}`Control panel` in {term}`Plone` registry to manage {term}`AEMET Settings`.
 
 - Add a restricted RESTful API endpoint that exposes the {term}`AEMET Settings` for {term}`Volto` _integration_.
 
-- Add a `AEMET Weather Current` Volto content block.
+-  {term}`Volto` content blocks:
 
-- Add a `AEMET Weather Forecast` Volto content block.
+   - Add a {ref}`aemet-weather-current-block` block.
 
-- Add a `React` component called `Weather`, that uses data from the {term}`AEMET` service.
+   - Add a {ref}`aemet-weather-forecast-block` block.
+
+- Add a `useWeatherData` hooks, that uses data from the {term}`AEMET` service.
+
+- Add a `WeatherCurrent` component, that uses to render the {ref}`aemet-weather-current-block` content block.
 
 ## Plone CMS integration
 
@@ -89,8 +93,8 @@ If you trying to install from Github you need edit the `mrs.developer.json` file
 }
 ```
 
-The `mrs.developer.json` file is using by an `NodeJS` utility called `mrs.developer` that makes
-it easy to work with `NPM` projects containing lots of packages, of which you only want to
+The `mrs.developer.json` file is using by an `Node.js` utility called `mrs.developer` that makes
+it easy to work with `npm` projects containing lots of packages, of which you only want to
 develop some.
 
 Also add {term}`volto-aemet` to your `package.json` file:
@@ -149,7 +153,7 @@ yarn start
 
 ## Enable it
 
-Visit http://localhost:3000/ in a browser, login, so go to `Site setup`, next to `Add-ons` control panel, 
+Visit http://localhost:3000/ in a browser, login, so go to `Site setup`, next to `Add-ons` {term}`Control panel`, 
 find the {term}`collective.volto.aemet` {term}`add-on` and select the `Install` button for enabled it.
 
 ## Settings it
@@ -165,41 +169,43 @@ on its website. For example, for the every municipality:
      ```{note}
      The `XML` file name has a prefix called `localidad_` and a suffix with an **ID**. For example,
      the ID for the municipality of _Seville_ is `41091`. This **ID** will be used later in the
-     `AEMET Settings` control panel.
+     {term}`AEMET Settings` {term}`Control panel`.
      ```
 
 To use this {term}`add-on`, go to the ``Site setup``, next to the ``Add-on Configuration`` icon, as shown below:
 
 <img width="290" alt="Add-on Configuration" src="../images/addon-configuration-aemet-icon.png">
 
-This {term}`AEMET Settings`, you can access the control panel, as shown below:
+This {term}`AEMET Settings`, you can access the {term}`Control panel`, as shown below:
 
 <img width="720" alt="AEMET Settings" src="../images/aemet-settings.png">
 
-In this control panel, you can configure the following fields:
+In this {term}`Control panel`, you can configure the following fields:
 
 - {term}`Location ID`, The Location ID of the {term}`AEMET` service, for example '41091' to Sevilla location ID.
 
 ## Use it
 
-To use the `AEMET` integration you need add the {term}`volto-aemet` {term}`add-on`, in
+To use the {term}`AEMET` integration you need add the {term}`volto-aemet` {term}`add-on`, in
 your {term}`Volto` project and use the amazing features into this {term}`add-on`.
 
 ### Volto content block
 
-This add-on include two (02) Volto content blocks as the following:
+This add-on include two (02) {term}`Volto` content blocks as the following:
 
+(aemet-weather-current-block)=
 #### AEMET weather current
 
-This Volto content block has no customisation options, just uses the settings defined in the `AEMET Settings` control panel.
+This {term}`Volto` content block has no customisation options, just uses the settings defined in the {term}`AEMET Settings` {term}`Control panel`.
 
 <img width="720" alt="AEMET Weather Current" src="../images/volto-content-block-aemet-weather-current.png">
 
 ---
 
+(aemet-weather-forecast-block)=
 #### AEMET weather forecast
 
-This Volto content block lets you to add the original widget provided by `AEMET` to the user’s interface, as shown below:
+This {term}`Volto` content block lets you to add the original widget provided by {term}`AEMET` to the user’s interface, as shown below:
 
 <img width="720" alt="AEMET Weather Forecast" src="../images/volto-content-block-aemet-weather-forecast.png">
 

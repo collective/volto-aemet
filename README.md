@@ -17,28 +17,36 @@ A volto add-on that integrates AEMET service with Plone to report the weather fo
 
 - Add a restricted RESTful API endpoint that exposes the `AEMET Settings` for `Volto` _integration_.
 
-- Add a `AEMET Weather Current` `Volto` content block.
+-  {term}`Volto` content blocks:
 
-- Add a `AEMET Weather Forecast` `Volto` content block.
+   - Add a `AEMET Weather Current` block.
 
-- Add a `React` component called `Weather`, that uses data from the `AEMET` service.
+   - Add a `AEMET Weather Forecast` block.
+
+- Add a `useWeatherData` hooks, that uses data from the `AEMET` service.
+
+- Add a `WeatherCurrent` component, that uses to render the `AEMET Weather Current` content block.
 
 ## Screenshots
 
-**AEMET Weather Current Volto content block**
+**AEMET Weather Current**
 
-<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-current.png">
+A `Volto` content block that looks like this:
+
+<img width="720" alt="AEMET Weather Current block" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-current.png">
 
 ---
 
-**AEMET Weather Forecast Volto content block**
+**AEMET Weather Forecast**
 
-<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-forecast.png">
+A `Volto` content block that looks like this:
+
+<img width="720" alt="AEMET Weather Forecast block" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/volto-content-block-aemet-weather-forecast.png">
 
 ## Plone CMS integration
 
 To use this product in `Plone` CMS, you needs to include the following add-on
-in your project: https://github.com/collective/collective.volto.aemet.
+in your project: [collective.volto.aemet](https://github.com/collective/collective.volto.aemet).
 
 ## Translations
 
@@ -97,8 +105,8 @@ If you trying to install from Github you need edit the `mrs.developer.json` file
 }
 ```
 
-The `mrs.developer.json` file is using by an `NodeJS` utility called `mrs.developer` that makes
-it easy to work with `NPM` projects containing lots of packages, of which you only want to
+The `mrs.developer.json` file is using by an `Node.js` utility called `mrs.developer` that makes
+it easy to work with `npm` projects containing lots of packages, of which you only want to
 develop some.
 
 Also add `volto-aemet` to your `package.json` file:
@@ -182,7 +190,7 @@ This `AEMET Settings`, you can access the control panel, as shown below:
 
 In this control panel, you can configure the following fields:
 
-- ``Location ID``, The Location ID of the AEMET service, for example '41091' to Sevilla location ID.
+- `Location ID`, The Location ID of the `AEMET` service, for example '41091' to Sevilla location ID.
 
 ## Use it
 

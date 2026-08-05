@@ -59,18 +59,18 @@ add-on
 plone.restapi
     `plone.restapi` is the RESTful hypermedia API for {term}`Plone`. It enables {term}`Volto` and other clients
     to interact with {term}`Plone` content and configuration over HTTP using JSON. This {term}`add-on` registers
-    its services and control panel adapters through ``plone.restapi``. It is used by {term}`collective.volto.aemet`
+    its services and {term}`Control panel` adapters through ``plone.restapi``. It is used by {term}`collective.volto.aemet`
     to expose the {term}`@aemet-settings` and {term}`@aemet-weather-forecast` endpoints to the {term}`Volto` frontend.
 
     ```{tip}
     More infomation checkout the official [documentation](https://6.docs.plone.org/plone.restapi/docs/source/).
     ```
 
-Control Panel
+Control panel
     Checkout the {term}`AEMET Settings` term.
 
 AEMET Settings
-    The `AEMET Settings` configuration panel available in {term}`Plone`'s Site Setup under `Add-on Configuration`.
+    The `AEMET Settings` {term}`Control panel` available in {term}`Plone`'s Site Setup under `Add-on Configuration`.
     It allows administrators to configure the {term}`Location ID` field stored in {term}`plone.registry`.
 
 plone.registry
@@ -85,11 +85,11 @@ Registry
 
 GenericSetup
     A {term}`Plone` framework for managing configuration through filesystem-based import and export profiles.
-    {term}`collective.volto.aemet` uses a `GenericSetup` profile to register its registry records and control panel on installation.
+    {term}`collective.volto.aemet` uses a `GenericSetup` profile to register its registry records and {term}`Control panel` on installation.
 
 collective.volto.aemet
-    `collective.volto.aemet` is the {term}`Plone` {term}`add-on` that integrates {term}`AEMET`sevice weather data into a {term}`Plone` site.
-    It provides a control panel to configure the target municipality, a REST API endpoint to expose weather forecast data, and a browser layer to scope its components.
+    `collective.volto.aemet` is the {term}`Plone` {term}`add-on` that integrates {term}`AEMET` sevice weather data into a {term}`Plone` site.
+    It provides a {term}`Control panel` to configure the target municipality, a REST API endpoint to expose weather forecast data, and a browser layer to scope its components.
     It is designed to work together with the {term}`volto-aemet` {term}`Volto` {term}`add-on`.
 
     ```{tip}
@@ -98,7 +98,7 @@ collective.volto.aemet
 
 volto-aemet
     `volto-aemet` is the {term}`Volto` {term}`add-on` that integrates {term}`AEMET` sevice weather data into a {term}`Plone` site via the {term}`collective.volto.aemet` {term}`add-on`.
-    It provides a control panel to configure the target municipality, Two Volto content blocks.
+    It provides a {term}`Control panel` to configure the target municipality, Two Volto content blocks.
 
     ```{tip}
     More infomation checkout the official [documentation](https://volto-aemet.readthedocs.io/en/latest/).
@@ -107,7 +107,7 @@ volto-aemet
 IAemetSettings
     ``IAemetSettings`` is the Zope schema interface that declares the configuration fields for the {term}`AEMET` {term}`add-on`.
     Currently it defines a single field: {term}`location_id`.
-    It is used as the schema for both the {term}`AEMET Settings` control panel and the {term}`Plone` {term}`Registry` records.
+    It is used as the schema for both the {term}`AEMET Settings` {term}`Control panel` and the {term}`Plone` {term}`Registry` records.
 
 Location ID
 location_id
@@ -115,7 +115,7 @@ location_id
     It is used to construct the URL of the XML feed, for example:
     ``https://www.aemet.es/xml/municipios/localidad_28058.xml`` for Madrid (``28058``),
     or ``localidad_41091.xml`` for Sevilla (``41091``).
-    It is configured via the {term}`AEMET Settings` control panel and stored in the {term}`Plone` registry under the key ``aemet.location_id``.
+    It is configured via the {term}`AEMET Settings` {term}`Control panel` and stored in the {term}`Plone` registry under the key ``aemet.location_id``.
 
 @aemet-settings
     A REST API endpoint exposed by {term}`collective.volto.aemet` that provides the {term}`AEMET Settings` to the {term}`Volto` frontend.
