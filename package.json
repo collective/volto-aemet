@@ -14,12 +14,12 @@
     "react",
     "aemet",
     "weather",
-    "integration",
-    "documentation"
+    "forecast",
+    "integration"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:collective/volto-aemet.git"
+    "url": "git+ssh://git@github.com/collective/volto-aemet.git"
   },
   "publishConfig": {
     "access": "public"

@@ -7,6 +7,8 @@
   "main": "src/index.ts",
   "license": "MIT",
   "keywords": [
+    "CMS",
+    "Plone",
     "volto-addon",
     "volto",
     "block",
@@ -19,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:collective/volto-aemet.git"
+    "url": "git+ssh://git@github.com/collective/volto-aemet.git"
   },
   "publishConfig": {
     "access": "public"
