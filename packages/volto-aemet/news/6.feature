@@ -1,1 +1,0 @@
-Fixed the tests for this add-on [macagua]

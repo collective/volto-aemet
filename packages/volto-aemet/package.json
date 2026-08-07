@@ -1,6 +1,6 @@
 {
   "name": "volto-aemet",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "A volto add-on that integrates AEMET service with Plone to report the weather forecast.",
   "author": "Leonardo J. Caballero G.",
   "homepage": "https://github.com/collective/volto-aemet#readme",
