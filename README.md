@@ -88,9 +88,9 @@ Add `volto-aemet` to your `package.json` file:
 }
 ```
 
-#### Install from Github
+#### Install from GitHub
 
-If you trying to install from Github you need edit the `mrs.developer.json` file:
+If you trying to install from `GitHub` you need edit the `mrs.developer.json` file:
 
 ```json
 {
@@ -125,38 +125,16 @@ Also add `volto-aemet` to your `package.json` file:
 
 ---
 
-### Volto 17 and earlier
-
-Create a new `Volto` project (you can skip this step if you already have one):
-
-```
-npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon volto-aemet
-cd my-volto-project
-```
-
-Add `volto-aemet` to your `package.json` file:
-
-```json
-"addons": [
-    "volto-aemet"
-],
-
-"dependencies": {
-    "volto-aemet": "*"
-}
-```
-
 Download and install the new add-on by running:
 
 ```shell
-yarn install
+make install
 ```
 
 Start `Volto` with:
 
 ```shell
-yarn start
+make start
 ```
 
 ## Enable it
@@ -411,4 +389,4 @@ This product was developed by [Leonardo J. Caballero G.](https://github.com/maca
 
 ## License
 
-The project is licensed under the MIT license.
+The project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
