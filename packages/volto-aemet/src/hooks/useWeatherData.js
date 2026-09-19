@@ -220,9 +220,21 @@ export const getWeatherIcon = (skyStateValue) => {
  */
 export const useWeatherData = () => {
   const [forecast, setForecast] = useState([]);
+  // const [currentTime, setCurrentTime] = useState(moment());
   const [isLoading, setIsLoading] = useState(true);
   const apiPath = config.settings.apiPath;
   const intl = useIntl();
+
+  // // Effect to update time every minute
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentTime(moment()); // ahora sí es una función setter
+  //   }, 60000); // update every minute
+  //
+  //   return () => clearInterval(timer); // clean the gap when dismantling
+  // }, []);
+  // And then use currentTime in JSX, for example:
+  // <p>{currentTime.format('HH:mm')}</p>
 
   useEffect(() => {
     const fetchWeather = async () => {
