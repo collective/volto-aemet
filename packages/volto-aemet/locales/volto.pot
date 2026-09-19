@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2026-08-05T17:40:59.666Z\n"
+"POT-Creation-Date: 2026-09-19T10:03:50.921Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -74,9 +74,9 @@ msgstr ""
 msgid "minimum_maximum"
 msgstr ""
 
-#. Default: "Not available"
+#. Default: "Unknown"
 #: hooks/useWeatherData
-msgid "not_available"
+msgid "unknown"
 msgstr ""
 
 #. Default: "Weather description"

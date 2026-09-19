@@ -7,11 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import moment from 'moment';
 import Image from '@plone/volto/components/theme/Image/Image';
-import {
-  weatherMessages,
-  getWeatherIcon,
-  useWeatherData,
-} from 'volto-aemet/hooks'; // explicit .js — shared logic, not the view
+import { getWeatherIcon, messages, useWeatherData } from 'volto-aemet/hooks'; // explicit .js — shared logic, not the view
 
 const WeatherCurrent = (props) => {
   const { forecast, isLoading } = useWeatherData();
@@ -43,27 +39,27 @@ const WeatherCurrent = (props) => {
             <div className="weather-current-time-row">
               <span
                 className="weather-current-time"
-                title={intl.formatMessage(weatherMessages.currentTime)}
+                title={intl.formatMessage(messages.currentTime)}
               >
                 {currentTime.format('HH:mm')}
               </span>
               <span
                 className="weather-current-day"
-                title={intl.formatMessage(weatherMessages.currentDay)}
+                title={intl.formatMessage(messages.currentDay)}
               >
                 {currentTime.format('ddd').toUpperCase()}
               </span>
             </div>
             <div
               className="weather-current-city"
-              title={intl.formatMessage(weatherMessages.currentLocation)}
+              title={intl.formatMessage(messages.currentLocation)}
             >
               {`${day.name}, ${day.provinceName}` || 'Sevilla, Spain.'}
             </div>
             <div className="weather-current-bottom">
               <span
                 className="weather-current-temp"
-                title={intl.formatMessage(weatherMessages.minimumMaximum)}
+                title={intl.formatMessage(messages.minimumMaximum)}
               >
                 {day.minTemp}-{day.maxTemp}º
               </span>
@@ -71,7 +67,7 @@ const WeatherCurrent = (props) => {
             <div className="weather-current-bottom">
               <span
                 className="weather-current-temp"
-                title={intl.formatMessage(weatherMessages.currentTemperature)}
+                title={intl.formatMessage(messages.currentTemperature)}
               >
                 {day.maxTemp}º
               </span>
@@ -79,14 +75,14 @@ const WeatherCurrent = (props) => {
                 className="weather-current-icon"
                 title={
                   day.skyStateDescription ||
-                  intl.formatMessage(weatherMessages.weatherDescription)
+                  intl.formatMessage(messages.weatherDescription)
                 }
               >
                 <Image
                   src={getWeatherIcon(day.skyStateText)}
                   alt={
                     day.skyStateDescription ||
-                    intl.formatMessage(weatherMessages.weatherDescription)
+                    intl.formatMessage(messages.weatherDescription)
                   }
                 />
               </div>

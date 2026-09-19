@@ -75,7 +75,7 @@ import climate74Icon from 'volto-aemet/icons/weather/temps/74.png';
 // i18n messages
 // ---------------------------------------------------------------------------
 
-export const weatherMessages = defineMessages({
+export const messages = defineMessages({
   minimumMaximum: {
     id: 'minimum_maximum',
     defaultMessage: 'Minimum-Maximum',
@@ -100,9 +100,9 @@ export const weatherMessages = defineMessages({
     id: 'loading_weather_forecast',
     defaultMessage: 'Loading weather forecast...',
   },
-  weatherNotAvailable: {
-    id: 'not_available',
-    defaultMessage: 'Not available',
+  unknown: {
+    id: 'unknown',
+    defaultMessage: 'Unknown',
   },
   weatherDescription: {
     id: 'weather_description',
@@ -276,15 +276,13 @@ export const useWeatherData = () => {
           {
             currentHour: moment().date(),
             date: moment().format('YYYY-MM-DD'),
-            name: 'Sevilla',
-            provinceName: 'Sevilla',
-            skyStateDescription: intl.formatMessage(
-              weatherMessages.weatherNotAvailable,
-            ),
+            name: intl.formatMessage(messages.unknown),
+            provinceName: intl.formatMessage(messages.unknown),
+            skyStateDescription: intl.formatMessage(messages.unknown),
             skyStateText: '11',
             minTemp: '--',
             maxTemp: '--',
-            timePeriod: intl.formatMessage(weatherMessages.weatherNotAvailable),
+            timePeriod: intl.formatMessage(messages.unknown),
           },
         ]);
       } finally {

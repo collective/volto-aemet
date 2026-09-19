@@ -8,11 +8,7 @@ import { renderHook, waitFor } from '@testing-library/react';
 import { IntlProvider } from 'react-intl';
 import moment from 'moment';
 
-import {
-  getWeatherIcon,
-  weatherMessages,
-  useWeatherData,
-} from './useWeatherData';
+import { getWeatherIcon, messages, useWeatherData } from './useWeatherData';
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -26,10 +22,10 @@ const wrapper = ({ children }) => (
 );
 
 // ---------------------------------------------------------------------------
-// weatherMessages
+// messages
 // ---------------------------------------------------------------------------
 
-describe('weatherMessages', () => {
+describe('messages', () => {
   it('exports all required message keys', () => {
     const requiredKeys = [
       'minimumMaximum',
@@ -38,16 +34,16 @@ describe('weatherMessages', () => {
       'currentTemperature',
       'currentTime',
       'loadingCurrent',
-      'weatherNotAvailable',
+      'unknown',
       'weatherDescription',
     ];
     requiredKeys.forEach((key) => {
-      expect(weatherMessages).toHaveProperty(key);
+      expect(messages).toHaveProperty(key);
     });
   });
 
   it('every message has a non-empty string id and defaultMessage', () => {
-    Object.values(weatherMessages).forEach((msg) => {
+    Object.values(messages).forEach((msg) => {
       expect(typeof msg.id).toBe('string');
       expect(msg.id.length).toBeGreaterThan(0);
       expect(typeof msg.defaultMessage).toBe('string');
@@ -317,8 +313,8 @@ describe('useWeatherData', () => {
     await waitFor(() => expect(result.current.isLoading).toBe(false));
 
     const [fallback] = result.current.forecast;
-    expect(fallback.name).toBe('Sevilla');
-    expect(fallback.provinceName).toBe('Sevilla');
+    expect(fallback.name).toBe('Unknown');
+    expect(fallback.provinceName).toBe('Unknown');
     expect(fallback.minTemp).toBe('--');
     expect(fallback.maxTemp).toBe('--');
     expect(fallback.skyStateText).toBe('11');
@@ -330,8 +326,8 @@ describe('useWeatherData', () => {
     const { result } = renderHook(() => useWeatherData(), { wrapper });
     await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-    expect(result.current.forecast[0].name).toBe('Sevilla');
-    expect(result.current.forecast[0].provinceName).toBe('Sevilla');
+    expect(result.current.forecast[0].name).toBe('Unknown');
+    expect(result.current.forecast[0].provinceName).toBe('Unknown');
     expect(result.current.forecast[0].maxTemp).toBe('--');
   });
 
@@ -344,8 +340,8 @@ describe('useWeatherData', () => {
     const { result } = renderHook(() => useWeatherData(), { wrapper });
     await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-    expect(result.current.forecast[0].name).toBe('Sevilla');
-    expect(result.current.forecast[0].provinceName).toBe('Sevilla');
+    expect(result.current.forecast[0].name).toBe('Unknown');
+    expect(result.current.forecast[0].provinceName).toBe('Unknown');
     expect(result.current.forecast[0].maxTemp).toBe('--');
   });
 
@@ -358,8 +354,8 @@ describe('useWeatherData', () => {
     const { result } = renderHook(() => useWeatherData(), { wrapper });
     await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-    expect(result.current.forecast[0].name).toBe('Sevilla');
-    expect(result.current.forecast[0].provinceName).toBe('Sevilla');
+    expect(result.current.forecast[0].name).toBe('Unknown');
+    expect(result.current.forecast[0].provinceName).toBe('Unknown');
     expect(result.current.forecast[0].maxTemp).toBe('--');
   });
 
@@ -386,8 +382,8 @@ describe('useWeatherData', () => {
     const { result } = renderHook(() => useWeatherData(), { wrapper });
     await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-    expect(result.current.forecast[0].name).toBe('Sevilla');
-    expect(result.current.forecast[0].provinceName).toBe('Sevilla');
+    expect(result.current.forecast[0].name).toBe('Unknown');
+    expect(result.current.forecast[0].provinceName).toBe('Unknown');
     expect(result.current.forecast[0].maxTemp).toBe('--');
     expect(result.current.forecast[0].minTemp).toBe('--');
   });

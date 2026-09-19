@@ -72,9 +72,9 @@ msgstr ""
 msgid "minimum_maximum"
 msgstr ""
 
-#. Default: "Not available"
+#. Default: "Unknown"
 #: hooks/useWeatherData
-msgid "not_available"
+msgid "unknown"
 msgstr ""
 
 #. Default: "Weather description"

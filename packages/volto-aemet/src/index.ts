@@ -6,11 +6,7 @@ import 'volto-aemet/theme/main.scss';
 // Re-export public utilities and components so consumers can import them
 // from 'volto-aemet' without knowing the internal folder structure.
 export { default as WeatherCurrent } from 'volto-aemet/components/Aemet';
-export {
-  getWeatherIcon,
-  useWeatherData,
-  weatherMessages,
-} from 'volto-aemet/hooks';
+export { getWeatherIcon, messages, useWeatherData } from 'volto-aemet/hooks';
 
 const applyConfig = (config: ConfigType) => {
   // Add your custom configurations here

@@ -14,7 +14,7 @@ import WeatherCurrent from './WeatherCurrent.jsx';
 // ---------------------------------------------------------------------------
 
 jest.mock('volto-aemet/hooks/useWeatherData.js', () => ({
-  weatherMessages: {
+  messages: {
     minimumMaximum: {
       id: 'minimum_maximum',
       defaultMessage: 'Minimum-Maximum',
@@ -33,9 +33,9 @@ jest.mock('volto-aemet/hooks/useWeatherData.js', () => ({
       id: 'loading_weather_forecast',
       defaultMessage: 'Loading weather forecast...',
     },
-    weatherNotAvailable: {
-      id: 'not_available',
-      defaultMessage: 'Not available',
+    unknown: {
+      id: 'unknown',
+      defaultMessage: 'Unknown',
     },
     weatherDescription: {
       id: 'weather_description',

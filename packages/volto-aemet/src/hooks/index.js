@@ -3,8 +3,4 @@
  * @module hooks/useWeatherData
  */
 
-export {
-  getWeatherIcon,
-  useWeatherData,
-  weatherMessages,
-} from './useWeatherData.js';
+export { getWeatherIcon, messages, useWeatherData } from './useWeatherData.js';
