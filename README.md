@@ -77,15 +77,19 @@ to your version of `Volto`.
 Add `volto-aemet` to your `package.json` file:
 
 ```json
-"addons": [
+  "addons": [
+    ...
     "volto-aemet": "*"
-]
+    ...
+  ]
 ```
 
 ```json
-"dependencies": {
+  "dependencies": {
+    ...
     "volto-aemet": "*"
-}
+    ...
+  }
 ```
 
 #### Install from GitHub
@@ -93,16 +97,18 @@ Add `volto-aemet` to your `package.json` file:
 If you trying to install from `GitHub` you need edit the `mrs.developer.json` file:
 
 ```json
-{
-  "volto-aemet": {
-    "develop": true,
-    "output": "./packages/",
-    "package": "volto-aemet",
-    "url": "git@github.com:collective/volto-aemet.git",
-    "https": "https://github.com/collective/volto-aemet.git",
-    "branch": "main"
+  ...
+  {
+    "volto-aemet": {
+      "develop": true,
+      "output": "./packages/",
+      "package": "volto-aemet",
+      "url": "git@github.com:collective/volto-aemet.git",
+      "https": "https://github.com/collective/volto-aemet.git",
+      "branch": "main"
+    }
   }
-}
+  ...
 ```
 
 The `mrs.developer.json` file is using by an `Node.js` utility called `mrs.developer` that makes
@@ -112,15 +118,19 @@ develop some.
 Also add `volto-aemet` to your `package.json` file:
 
 ```json
-"addons": [
+  "addons": [
+    ...
     "volto-aemet": "*"
-]
+    ...
+  ]
 ```
 
 ```json
-"dependencies": {
-    "volto-aemet": "workspace:*",
-}
+  "dependencies": {
+    ...
+    "volto-aemet": "*"
+    ...
+  }
 ```
 
 ---
