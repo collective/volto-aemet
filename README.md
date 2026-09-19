@@ -46,7 +46,7 @@ A `Volto` content block that looks like this:
 ## Plone CMS integration
 
 To use this product in `Plone` CMS, you needs to include the following add-on
-in your project: [collective.volto.aemet](https://github.com/collective/collective.volto.aemet).
+in your project: [collective.volto.aemet](https://pypi.org/project/collective.volto.aemet).
 
 ## Translations
 

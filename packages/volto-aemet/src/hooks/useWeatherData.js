@@ -1,6 +1,6 @@
 /**
  * Weather shared logic — data fetching and icon mapping.
- * @module components/Aemet/Weather
+ * @module hooks/useWeatherData.js
  */
 
 import { useState, useEffect } from 'react';
@@ -184,18 +184,26 @@ const weatherIconMap = {
  * The value can be numeric ("46") or include a night suffix ("46n").
  */
 export const getWeatherIcon = (skyStateValue) => {
+  // skyStateValue can be like "46", "46n", "11", "82n", etc.
+  // The 'n' suffix indicates night time and is already provided by AEMET
+
+  // Clean the value (trim whitespace)
   const cleanValue = skyStateValue?.trim();
 
+  // Return the corresponding icon
+  // First try exact match (with 'n' suffix if present)
   if (weatherIconMap[cleanValue]) {
     return weatherIconMap[cleanValue];
   }
 
+  // If no exact match, try removing 'n' suffix as fallback
   // Fallback: strip the night suffix and try again
   const numericValue = cleanValue?.replace(/n$/i, '');
   if (weatherIconMap[numericValue]) {
     return weatherIconMap[numericValue];
   }
 
+  // Default fallback Icon
   return climate11Icon;
 };
 
@@ -233,6 +241,7 @@ export const useWeatherData = () => {
 
         const data = await response.json();
 
+        // Transform backend response to component format
         if (data && data.forecast && data.forecast.length > 0) {
           const todayForecast = data.forecast.find(
             (day) => day.date === moment().format('YYYY-MM-DD'),
@@ -262,6 +271,7 @@ export const useWeatherData = () => {
         // eslint-disable-next-line no-console
         console.error('Error fetching weather data:', error.message);
 
+        // Set fallback weather data
         setForecast([
           {
             currentHour: moment().date(),
