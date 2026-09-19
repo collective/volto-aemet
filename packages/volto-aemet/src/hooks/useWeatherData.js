@@ -70,6 +70,7 @@ import climate73Icon from 'volto-aemet/icons/weather/temps/73.png';
 // import climate73nIcon from 'volto-aemet/icons/weather/temps/73n.png';
 import climate74Icon from 'volto-aemet/icons/weather/temps/74.png';
 // import climate74nIcon from 'volto-aemet/icons/weather/temps/74n.png';
+import unknownClimateIcon from 'volto-aemet/icons/weather/unknown_climate.png';
 
 // ---------------------------------------------------------------------------
 // i18n messages
@@ -204,7 +205,7 @@ export const getWeatherIcon = (skyStateValue) => {
   }
 
   // Default fallback Icon
-  return climate11Icon;
+  return unknownClimateIcon;
 };
 
 // ---------------------------------------------------------------------------

@@ -166,22 +166,22 @@ describe('getWeatherIcon', () => {
   });
 
   it('returns the default icon (11) for an unknown sky-state code', () => {
-    const defaultIcon = getWeatherIcon('11');
+    const defaultIcon = getWeatherIcon('unknown_climate');
     expect(getWeatherIcon('999')).toBe(defaultIcon);
     expect(getWeatherIcon('abc')).toBe(defaultIcon);
     expect(getWeatherIcon('0')).toBe(defaultIcon);
   });
 
   it('returns the default icon for null input', () => {
-    expect(getWeatherIcon(null)).toBe(getWeatherIcon('11'));
+    expect(getWeatherIcon(null)).toBe(getWeatherIcon('unknown_climate'));
   });
 
   it('returns the default icon for undefined input', () => {
-    expect(getWeatherIcon(undefined)).toBe(getWeatherIcon('11'));
+    expect(getWeatherIcon(undefined)).toBe(getWeatherIcon('unknown_climate'));
   });
 
   it('returns the default icon for an empty string', () => {
-    expect(getWeatherIcon('')).toBe(getWeatherIcon('11'));
+    expect(getWeatherIcon('')).toBe(getWeatherIcon('unknown_climate'));
   });
 });
 
