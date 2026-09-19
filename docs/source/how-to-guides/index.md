@@ -174,11 +174,11 @@ on its website. For example, for the every municipality:
 
 To use this {term}`add-on`, go to the ``Site setup``, next to the ``Add-on Configuration`` icon, as shown below:
 
-<img width="290" alt="Add-on Configuration" src="../images/addon-configuration-aemet-icon.png">
+<img width="184" alt="Add-on Configuration" src="../images/addon-configuration-aemet-icon.png">
 
 This {term}`AEMET Settings`, you can access the {term}`Control panel`, as shown below:
 
-<img width="720" alt="AEMET Settings" src="../images/aemet-settings.png">
+<img width="631" alt="AEMET Settings" src="../images/aemet-settings.png">
 
 In this {term}`Control panel`, you can configure the following fields:
 
@@ -223,7 +223,7 @@ When you select the block, the available block settings are displaying in the `B
 
   The {term}`Location ID` of the {term}`AEMET` service, for example '41091' to Sevilla location ID.
 
-This widget integration uses the {term}`AEMET` service called '["Widget" para la Predicción por municipios](https://www.aemet.es/es/eltiempo/widgets/municipios/)'
+This widget integration uses the {term}`AEMET` service called ["Widget" para la Predicción por municipios](https://www.aemet.es/es/eltiempo/widgets/municipios/)
 on its website. For example, for the every municipality:
 
 - '[Madrid (Madrid)](https://www.aemet.es/es/eltiempo/widgets/municipios/madrid-id28079)', it provides detailed information widget

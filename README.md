@@ -77,19 +77,23 @@ to your version of `Volto`.
 Add `volto-aemet` to your `package.json` file:
 
 ```json
+  ...
   "addons": [
     ...
     "volto-aemet": "*"
     ...
   ]
+  ...
 ```
 
 ```json
+  ...
   "dependencies": {
     ...
     "volto-aemet": "*"
     ...
   }
+  ...
 ```
 
 #### Install from GitHub
@@ -97,18 +101,18 @@ Add `volto-aemet` to your `package.json` file:
 If you trying to install from `GitHub` you need edit the `mrs.developer.json` file:
 
 ```json
+{
   ...
-  {
-    "volto-aemet": {
-      "develop": true,
-      "output": "./packages/",
-      "package": "volto-aemet",
-      "url": "git@github.com:collective/volto-aemet.git",
-      "https": "https://github.com/collective/volto-aemet.git",
-      "branch": "main"
-    }
+  "volto-aemet": {
+    "develop": true,
+    "output": "./packages/",
+    "package": "volto-aemet",
+    "url": "git@github.com:collective/volto-aemet.git",
+    "https": "https://github.com/collective/volto-aemet.git",
+    "branch": "main"
   }
   ...
+ }
 ```
 
 The `mrs.developer.json` file is using by an `Node.js` utility called `mrs.developer` that makes
@@ -118,19 +122,23 @@ develop some.
 Also add `volto-aemet` to your `package.json` file:
 
 ```json
+  ...
   "addons": [
     ...
     "volto-aemet": "*"
     ...
   ]
+  ...
 ```
 
 ```json
+  ...
   "dependencies": {
     ...
-    "volto-aemet": "*"
+    "volto-aemet": "workspace:*",
     ...
   }
+  ...
 ```
 
 ---
@@ -170,11 +178,11 @@ on its website. For example, for the every municipality:
 
 To use this add-on, go to the ``Site setup``, next to the ``Add-on Configuration`` icon, as shown below:
 
-<img width="290" alt="Add-on Configuration" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/addon-configuration-aemet-icon.png">
+<img width="184" alt="Add-on Configuration" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/addon-configuration-aemet-icon.png">
 
 This `AEMET Settings`, you can access the control panel, as shown below:
 
-<img width="720" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/aemet-settings.png">
+<img width="631" alt="AEMET Settings" src="https://raw.githubusercontent.com/collective/volto-aemet/refs/heads/main/docs/source/images/aemet-settings.png">
 
 In this control panel, you can configure the following fields:
 
@@ -217,7 +225,7 @@ When you select the block, the available block settings are displaying in the `B
 
   The `Location ID` of the `AEMET` service, for example '41091' to Sevilla location ID.
 
-This widget integration uses the `AEMET` service called '["Widget" para la Predicción por municipios](https://www.aemet.es/es/eltiempo/widgets/municipios/)'
+This widget integration uses the `AEMET` service called ["Widget" para la Predicción por municipios](https://www.aemet.es/es/eltiempo/widgets/municipios/)
 on its website. For example, for the every municipality:
 
 - '[Madrid (Madrid)](https://www.aemet.es/es/eltiempo/widgets/municipios/madrid-id28079)', it provides detailed information widget
