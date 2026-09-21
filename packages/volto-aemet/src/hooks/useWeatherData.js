@@ -292,7 +292,7 @@ export const useWeatherData = () => {
             name: intl.formatMessage(messages.unknown),
             provinceName: intl.formatMessage(messages.unknown),
             skyStateDescription: intl.formatMessage(messages.unknown),
-            skyStateText: '11',
+            skyStateText: false,
             minTemp: '--',
             maxTemp: '--',
             timePeriod: intl.formatMessage(messages.unknown),

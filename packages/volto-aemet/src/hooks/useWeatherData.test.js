@@ -317,7 +317,7 @@ describe('useWeatherData', () => {
     expect(fallback.provinceName).toBe('Unknown');
     expect(fallback.minTemp).toBe('--');
     expect(fallback.maxTemp).toBe('--');
-    expect(fallback.skyStateText).toBe('11');
+    expect(fallback.skyStateText).toBe(false);
   });
 
   it('uses fallback data when fetch throws a network error', async () => {
